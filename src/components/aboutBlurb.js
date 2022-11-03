@@ -22,10 +22,10 @@ const AboutBlurb = () => {
           <div className="content">
             <h3>About Me</h3>
             <p>
-                Based in SoCal, I am an avid programmer and cat lover who enjoys Web and App Development. My skills include: (Frontend) HTML, CSS, SCSS, JS, React, Swift, Java | (Backend) Node.js, Express, Firebase.
+                I'm currently studying at the University of California, Los Angeles as a Computer Science major. I have an unhealthy addiction to matcha, but a healthy obsession with cats. ;)  
             </p>
             <div className="btn-row">
-              <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
+              <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
               {/* <Link to="/contact">Contact me</Link> */}
             </div>
           </div>
