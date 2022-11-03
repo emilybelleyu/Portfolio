@@ -26,7 +26,7 @@ const AboutBlurb = () => {
             </p>
             <div className="btn-row">
               <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
-              {/* <Link to="/contact">Contact me</Link> */}
+              {/* <Link to="/contact">Contact</Link> */}
             </div>
           </div>
           <div className="images">
