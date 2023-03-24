@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 const AboutBlurb = () => {
   const data = useStaticQuery(graphql`
     query {
-      me: file(relativePath: { eq: "newem.png" }) {
+      me: file(relativePath: { eq: "emiCafe.jpeg" }) {
         childImageSharp {
           fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
@@ -22,7 +22,7 @@ const AboutBlurb = () => {
           <div className="content">
             <h3>About Me</h3>
             <p>
-                I'm currently studying at the University of California, Los Angeles as a Computer Science major. I have an unhealthy addiction to matcha, but a healthy obsession with cats. ;)  
+                I'm currently studying at the University of California, Los Angeles as a Computer Science major. I have an unhealthy addiction to matcha, but a healthy obsession with cats.  
             </p>
             <div className="btn-row">
               <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
