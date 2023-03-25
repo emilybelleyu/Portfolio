@@ -42,10 +42,34 @@ const Projects= () => {
           }
         }
       }
+      foodies: file(relativePath: { eq: "foodies.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 700, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
     <div id="projects" className="projects">
+             <div className="blog">
+             <article>
+                 <Img fluid={data.foodies.childImageSharp.fluid} className="blog-img"/>
+             </article>
+            <div className="blog-card">
+                <h4>The Foodies</h4>
+                <p>An application to help students of UCLA decide where to get food based on other
+                   students’ reviews. A platform for students to learn more about different dining halls 
+                   and restaurants on campus based on the experiences of fellow students, UCLA faculty, and staff. 
+                   Created the frontend with React and Node.js and backend is integrated with Firebase (authentication
+                   and database).</p>
+                <div className="blog-footer">
+                    <a href="https://github.com/GMochman/cs35l-project" target="_blank" rel="noopener noreferrer">View Github</a>
+                </div>
+            </div>
+         </div>
+
          <div className="blog">
              <article>
                  <Img fluid={data.mobileapp.childImageSharp.fluid} className="blog-img"/>
