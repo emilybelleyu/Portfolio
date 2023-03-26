@@ -40,7 +40,7 @@ const AboutBlurb = () => {
         </div>
         <div className="spotify-content">
           <p>
-            These are my favourite songs at the moment! 🍓💗
+            These are my favourite songs at the moment!<span role="img" aria-label="strawberry">🍓</span><span role="img" aria-label="heartpulse">💗</span>
           </p>
         </div>
       </div>
