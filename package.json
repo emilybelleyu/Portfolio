@@ -35,7 +35,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
