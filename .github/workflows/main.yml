@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          branch: master
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.portfolio }}
