@@ -9,9 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/checkout@v1
+        name: set up project
+        run:
+          yarn add
+          gatsby build
+      - uses: peaceiris/actions-gh-pages@v3.9.2
         with:
-          access-token: ${{ secrets.portfolio }}
-          deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./public
