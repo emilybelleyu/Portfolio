@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: set up project
-        run:
-          yarn add
-          gatsby build
+        run: |
+          yarn install
+          gatsby build --prefix-paths && gh-pages -d public
       - uses: peaceiris/actions-gh-pages@v3.9.2
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
