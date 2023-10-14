@@ -4,7 +4,15 @@ import React from "react"
 import linkedin from "../images/linkedin.png"
 import instagram from "../images/instagram.png"
 import github from "../images/github.png"
-// import facebook from "../images/facebook.png"
+import facebook from "../images/facebook.png"
+
+
+// const featured = [
+//   { name: "CreativeBoom", image: creativeBoom },
+//   { name: "Afropunk", image: afropunk },
+//   { name: "WGSN", image: wgsn },
+//   { name: "Vogue", image: vogue },
+// ]
 
 const Footer = () => {
   return (
@@ -33,9 +41,9 @@ const Footer = () => {
             <a href="https://github.com/emilybelleyu" target="_blank" rel="noopener noreferrer">
               <img src={github} height="40" alt="Github" />
             </a>
-            {/* <a href="https://www.facebook.com/emily.yu.5667" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/emily.yu.5667" target="_blank" rel="noopener noreferrer">
               <img src={facebook} height="40" alt="Facebook" />
-            </a> */}
+            </a>
           </div>
           <div className="myemail">
             <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">emilyyu331@gmail.com</a>

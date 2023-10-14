@@ -58,11 +58,12 @@ const Projects= () => {
                  <Img fluid={data.foodies.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>The Foodies <span>🍔</span></h4>
-                <p>At UCLA, there is a lack of a reliable resource for making informed decisions regarding food options 
-                  available on campus. This platform enables students to learn more about different dining halls and restaurants
-                  on and near campus based on the experiences of fellow students, UCLA faculty, and staff. Created the frontend 
-                  with React and Node.js and backend is integrated with Firebase (authentication and database).</p>
+                <h4>The Foodies</h4>
+                <p>An application to help students of UCLA decide where to get food based on other
+                   students’ reviews. A platform for students to learn more about different dining halls 
+                   and restaurants on campus based on the experiences of fellow students, UCLA faculty, and staff. 
+                   Created the frontend with React and Node.js and backend is integrated with Firebase (authentication
+                   and database).</p>
                 <div className="blog-footer">
                     <a href="https://github.com/GMochman/cs35l-project" target="_blank" rel="noopener noreferrer">View Github</a>
                 </div>
@@ -74,7 +75,7 @@ const Projects= () => {
                  <Img fluid={data.mobileapp.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>Arcadia High Mobile <span>📱</span></h4>
+                <h4>Arcadia High Mobile</h4>
                 <p>A mobile news app used to help my high school's students and parents stay updated on important school 
                   announcements and deadlines--instead of scouring through the school's website and social medias. Uses Swift for 
                    its frontend and Firebase for its backend. Namely, it uses Firebase’s database and cloud messaging 
@@ -91,7 +92,7 @@ const Projects= () => {
                  <Img fluid={data.ces.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>Content Editing System <span>🖌</span></h4>
+                <h4>Content Editing System</h4>
                 <p>A CRUD web application created as the content editing system for the Arcadia High Mobile app. 
                   Uses Google’s Firebase API for backend and HTML, CSS, Javascript for frontend. Specifically, it
                   uses Firebase’s hosting, authentication, database, and cloud messaging services to deploy the website, 
@@ -108,12 +109,12 @@ const Projects= () => {
                  <Img fluid={data.castway.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>Castway <span>💻</span></h4>
-                <p>An open source video conferencing web application using React, Node.js, Express, and Typescript. 
+                <h4>Castway</h4>
+                <p>An open source video conferencing web application using React, Node.js, Express, Typescript, and Yarn. 
                   Implemented a multipeer connection using WebRTC protocol to introduce users/peers to each other via a signaling server. 
                   Coded under the guidance of Michael Lorton, an ex-Google staff engineer.</p>
                 <div className="blog-footer">
-                    {/* <a href="https://github.com/pocket-coders/castway-client" target="_blank" rel="noopener noreferrer">View Github</a> */}
+                    <a href="https://github.com/pocket-coders/castway-client" target="_blank" rel="noopener noreferrer">View Github</a>
                     <a href="https://www.youtube.com/watch?v=RRO1xZRwhhQ" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
@@ -124,11 +125,12 @@ const Projects= () => {
                 <Img fluid={data.fruity.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>Fruity Friends <span>🍒</span></h4>
+                <h4>Fruity Friends</h4>
                 <p>A mystery narrative game programmed in C# and made with the Unity game engine. A 
                   final project created while attending the California State Summer School for Mathematics 
                   & Science (COSMOS) '19 within the Game Design and Development cluster.</p>
                 <div className="blog-footer">
+                    {/* <a href="https://github.com/AHSAppDevTeam/AHS2020app" target="_blank" rel="noopener noreferrer">View Github</a> */}
                     <a href="https://play.unity.com/mg/other/fruity-friends" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
@@ -139,9 +141,9 @@ const Projects= () => {
                  <Img fluid={data.portfolio.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>Em's Portfolio <span>🐇🍧</span></h4>
-                <p>A responsive web application using React and SCSS. It serves as a medium for my own creative 
-                  design and a platform to feature my past projects. Coincidentally, it is the website you are on!</p>
+                <h4>Emily Yu's Portfolio</h4>
+                <p>A responsive web application programmed with Gatsby.js, SCSS, and Yarn, it serves as a medium for my own creative 
+                  design and a platform to feature my past projects. Coincidentally, it is the website you are on.</p>
                 <div className="blog-footer">
                     <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a>
                     <a href="https://emilybelleyu.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">View Project</a>
