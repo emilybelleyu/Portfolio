@@ -5,11 +5,11 @@ $off-white: #f6e3e0;
 $black: #000000;
 $darkgrey: #7e7e7e;
 $grey: #a7a7a7;
-$red: #eb5757;
-$salmon: #e16259;
+$red: #f898ad;
+$salmon: #e8a2ab;
 $lightpink: #FFE6EE;
 $pink: #FFDBE9;
-$peach: #FFB6C1;
+$peach: #c0899b;
 
 $transition: all 0.3s linear;
 $spacing: 0.2rem;
@@ -401,7 +401,8 @@ header {
       top: 0;
       left: 0;
       border: none;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      box-shadow: $light-shadow;
       border-radius: 20px;
     }
     @media screen and (max-width: 1000px) {
