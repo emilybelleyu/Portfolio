@@ -49,11 +49,53 @@ const Projects= () => {
           }
         }
       }
+      choruslapilli: file(relativePath: { eq: "chorus-lapilli.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 700, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
     <div id="projects" className="projects">
-             <div className="blog">
+          <div className="blog">
+             <article>
+                 <Img fluid={data.choruslapilli.childImageSharp.fluid} className="blog-img"/>
+             </article>
+            <div className="blog-card">
+                <h4>Chorus Lapilli <span role="img" aria-label="rome">🕌</span></h4>
+                <p>Implementation of a variant of terni lapilli. Following their initial three moves, players are constrained
+                   from adding additional pieces; instead, they are required to relocate one of their existing pieces to an 
+                   adjacent unoccupied square. This restriction means that, after their third move, they will occupy three 
+                   distinct squares on the board. The allowable relocation directions encompass vertical, horizontal, and 
+                   diagonal movements. Notably, should it be a player's turn to make a move, and they have precisely three 
+                   pieces on the board, with one of those pieces positioned at the central square, their move obligation
+                   becomes twofold: it must either secure a victory or relinquish their occupancy of the center square. Grab
+                   a friend and try to play!</p>
+                <div className="blog-footer">
+                    <a href="https://github.com/emilybelleyu/chorus-lapilli" target="_blank" rel="noopener noreferrer">View Github</a>
+                </div>
+            </div>
+         </div>
+
+         <div className="blog">
+             <article>
+                 <Img fluid={data.portfolio.childImageSharp.fluid} className="blog-img"/>
+             </article>
+            <div className="blog-card">
+                <h4>Em's Portfolio <span role="img" aria-label="rabbit">🐇</span><span role="img" aria-label="shavedice">🍧</span></h4>
+                <p>A responsive web application using React and SCSS. It serves as a medium for my own creative 
+                  design and a platform to feature my past projects. Coincidentally, it is the website you are on!</p>
+                <div className="blog-footer">
+                    <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a>
+                    <a href="https://emilybelleyu.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+            </div>
+         </div>
+
+          <div className="blog">
              <article>
                  <Img fluid={data.foodies.childImageSharp.fluid} className="blog-img"/>
              </article>
@@ -130,21 +172,6 @@ const Projects= () => {
                   & Science (COSMOS) '19 within the Game Design and Development cluster.</p>
                 <div className="blog-footer">
                     <a href="https://play.unity.com/mg/other/fruity-friends" target="_blank" rel="noopener noreferrer">View Project</a>
-                </div>
-            </div>
-         </div>
-
-         <div className="blog">
-             <article>
-                 <Img fluid={data.portfolio.childImageSharp.fluid} className="blog-img"/>
-             </article>
-            <div className="blog-card">
-                <h4>Em's Portfolio <span role="img" aria-label="rabbit">🐇</span><span role="img" aria-label="shavedice">🍧</span></h4>
-                <p>A responsive web application using React and SCSS. It serves as a medium for my own creative 
-                  design and a platform to feature my past projects. Coincidentally, it is the website you are on!</p>
-                <div className="blog-footer">
-                    <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a>
-                    <a href="https://emilybelleyu.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
          </div>
