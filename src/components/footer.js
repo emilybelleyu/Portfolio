@@ -22,8 +22,8 @@ const Footer = () => {
           </ul>
         </div>
       </div> */}
-      <div className="footer" style={{ background: `url(${floralTile}) repeat-x` }}>
-        <div className="inner" style={{ background: `url(${floralTile}) repeat-x` }}>
+      <div className="footer" style={{ background: `url(${floralTile}) repeat` }}>
+        <div className="inner" style={{ background: `url(${floralTile}) repeat` }}>
           <span>© {new Date().getFullYear()} Emily Yu</span>
           <div className="socials">
             <a href="https://www.linkedin.com/in/emily-yu-074a5a1b0" target="_blank" rel="noopener noreferrer">
