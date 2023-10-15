@@ -558,6 +558,8 @@ header {
       font-size: 1.5vmin;
       font-weight: 400;
       color: $darkgrey;
+      max-height: 90px; /* Set a max height to trigger the scroll */
+      overflow: auto; /* Add the scroll effect */
       @media screen and (max-width: 620px) {
         font-size: 2.3vmin;
       }
