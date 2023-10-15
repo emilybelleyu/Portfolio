@@ -3,10 +3,11 @@ import React from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 //Import Images
 import daisy from "../images/daisy.png"
+import floralTile from "../images/floralTile.png"
 // import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Header = ({ toggleSidebar }) => (
-  <header> 
+  <header style={{ background: `url(${floralTile}) repeat-x` }}> 
     <div className="container">
       <div className="inner-header"> 
             <img className="daisy" src={daisy} width="45" height="40" alt="Daisy"/>
