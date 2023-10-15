@@ -4,7 +4,9 @@ import React from "react"
 import linkedin from "../images/linkedin.png"
 import instagram from "../images/instagram.png"
 import github from "../images/github.png"
+import resume from "../images/resume.png"
 // import facebook from "../images/facebook.png"
+import floralTile from "../images/floralTile.png"
 
 const Footer = () => {
   return (
@@ -20,8 +22,8 @@ const Footer = () => {
           </ul>
         </div>
       </div> */}
-      <div className="footer">
-        <div className="inner">
+      <div className="footer" style={{ background: `url(${floralTile}) repeat-x` }}>
+        <div className="inner" style={{ background: `url(${floralTile}) repeat-x` }}>
           <span>© {new Date().getFullYear()} Emily Yu</span>
           <div className="socials">
             <a href="https://www.linkedin.com/in/emily-yu-074a5a1b0" target="_blank" rel="noopener noreferrer">
@@ -33,9 +35,9 @@ const Footer = () => {
             <a href="https://github.com/emilybelleyu" target="_blank" rel="noopener noreferrer">
               <img src={github} height="40" alt="Github" />
             </a>
-            {/* <a href="https://www.facebook.com/emily.yu.5667" target="_blank" rel="noopener noreferrer">
-              <img src={facebook} height="40" alt="Facebook" />
-            </a> */}
+            <a href="https://docs.google.com/document/d/1Vg_EObawIOqcuAnC4M7j243M5KJB1Dl_1UOVMxNCgFM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              <img src={resume} height="40" alt="Resume" />
+            </a>
           </div>
           <div className="myemail">
             <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">emilyyu331@gmail.com</a>

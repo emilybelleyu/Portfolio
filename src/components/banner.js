@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
+import floralTile from "../images/floralTile.png"
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner" style={{ background: `url(${floralTile}) repeat` }}>
       <div className="container">
         <div className="row">
           <div className="main-text">Hi! I'm Emily.</div>

@@ -392,6 +392,7 @@ header {
     position: relative; /* Set the position to relative */
     margin-top: 15%;
     margin-left: 8%;
+    // width: 100%;
     padding-bottom: 30%;
     overflow: hidden; /* Hide the overflow of the container */
     max-width: 100%; /* Ensure it fits within its container */
@@ -422,7 +423,6 @@ header {
     margin-left: 58%;
     margin-top: -20%;
     width: 40%;
-    background-color: $off-white;
     border-radius: 20px;
     z-index: 1;
     p {
