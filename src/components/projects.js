@@ -152,8 +152,7 @@ const Projects= () => {
             <div className="blog-card">
                 <h4>Castway <span role="img" aria-label="laptop">💻</span></h4>
                 <p>An open source video conferencing web application using React, Node.js, Express, and Typescript. 
-                  Implemented a multipeer connection using WebRTC protocol to introduce users/peers to each other via a signaling server. 
-                  Coded under the guidance of Michael Lorton, an ex-Google staff engineer.</p>
+                  Implemented a multipeer connection using WebRTC protocol to introduce users/peers to each other via a signaling server.</p>
                 <div className="blog-footer">
                     {/* <a href="https://github.com/pocket-coders/castway-client" target="_blank" rel="noopener noreferrer">View Github</a> */}
                     <a href="https://www.youtube.com/watch?v=RRO1xZRwhhQ" target="_blank" rel="noopener noreferrer">View Project</a>
