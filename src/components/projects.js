@@ -56,6 +56,13 @@ const Projects= () => {
           }
         }
       }
+      pythonshuf: file(relativePath: { eq: "shuf.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 700, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
   return (
@@ -107,6 +114,25 @@ const Projects= () => {
                   with React and Node.js and backend is integrated with Firebase (authentication and database).</p>
                 <div className="blog-footer">
                     <a href="https://github.com/GMochman/cs35l-project" target="_blank" rel="noopener noreferrer">View Github</a>
+                </div>
+            </div>
+         </div>
+
+         <div className="blog">
+             <article>
+                 <Img fluid={data.pythonshuf.childImageSharp.fluid} className="blog-img"/>
+             </article>
+            <div className="blog-card">
+                <h4>Python GNU Shuf<span role="img" aria-label="shuffle"> 🔀 </span></h4>
+                <p>Python implementation of GNU shuf. Shuf is an integral component of the textutils package within the GNU 
+                  Core Utilities suite. This command-line utility serves the purpose of producing randomized permutations of 
+                  lines extracted from input files, as well as generating random numbers within defined numerical ranges. Its 
+                  versatile functionality is applicable to a wide range of use cases, including data shuffling, random sampling, 
+                  and the generation of arbitrary sequences. 
+                  Fun fact: My Software Construction and Operating Systems professor, Dr. Paul Eggert, was the one who made shuf!</p>
+                <div className="blog-footer">
+                    {/* <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a> */}
+                    {/* <a href="https://emilybelleyu.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">View Project</a> */}
                 </div>
             </div>
          </div>
