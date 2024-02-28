@@ -73,14 +73,7 @@ const Projects= () => {
              </article>
             <div className="blog-card">
                 <h4>Chorus Lapilli <span role="img" aria-label="rome">🕌</span></h4>
-                <p>Implementation of a variant of terni lapilli. Following their initial three moves, players are constrained
-                   from adding additional pieces; instead, they are required to relocate one of their existing pieces to an 
-                   adjacent unoccupied square. This restriction means that, after their third move, they will occupy three 
-                   distinct squares on the board. The allowable relocation directions encompass vertical, horizontal, and 
-                   diagonal movements. Notably, should it be a player's turn to make a move, and they have precisely three 
-                   pieces on the board, with one of those pieces positioned at the central square, their move obligation
-                   becomes twofold: it must either secure a victory or relinquish their occupancy of the center square. Grab
-                   a friend and try to play!</p>
+                <p>Implementation of a variant of terni lapilli. Grab a friend and try to play!</p>
                 <div className="blog-footer">
                     <a href="https://github.com/emilybelleyu/chorus-lapilli" target="_blank" rel="noopener noreferrer">View Github</a>
                 </div>
@@ -93,7 +86,7 @@ const Projects= () => {
              </article>
             <div className="blog-card">
                 <h4>Em's Portfolio <span role="img" aria-label="rabbit">🐇</span><span role="img" aria-label="shavedice">🍧</span></h4>
-                <p>A responsive web application using React and SCSS. It serves as a medium for my own creative 
+                <p>A responsive web application using React, GraphQL, and SCSS. It serves as a medium for my own creative 
                   design and a platform to feature my past projects. Coincidentally, it is the website you are on!</p>
                 <div className="blog-footer">
                     <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a>
@@ -125,11 +118,10 @@ const Projects= () => {
             <div className="blog-card">
                 <h4>Python GNU Shuf<span role="img" aria-label="shuffle"> 🔀 </span></h4>
                 <p>Python implementation of GNU shuf. Shuf is an integral component of the textutils package within the GNU 
-                  Core Utilities suite. This command-line utility serves the purpose of producing randomized permutations of 
-                  lines extracted from input files, as well as generating random numbers within defined numerical ranges. Its 
-                  versatile functionality is applicable to a wide range of use cases, including data shuffling, random sampling, 
-                  and the generation of arbitrary sequences. 
-                  Fun fact: My Software Construction and Operating Systems professor, Dr. Paul Eggert, was the one who made shuf!</p>
+                  Core Utilities suite. The command-line utility can produce randomized permutations of lines extracted from 
+                  input files, as well as generating random numbers within defined numerical ranges. Its versatile functionality 
+                  is applicable to a wide range of use cases, including data shuffling, random sampling, and the generation of arbitrary sequences. 
+                  My professor Dr. Paul Eggert was actually the one who made shuf!</p>
                 <div className="blog-footer">
                     {/* <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a> */}
                     {/* <a href="https://emilybelleyu.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">View Project</a> */}
@@ -178,7 +170,7 @@ const Projects= () => {
             <div className="blog-card">
                 <h4>Castway <span role="img" aria-label="laptop">💻</span></h4>
                 <p>An open source video conferencing web application using React, Node.js, Express, and Typescript. 
-                  Implemented a multipeer connection using WebRTC protocol to introduce users/peers to each other via a signaling server.</p>
+                  I implemented a multipeer connection using WebRTC protocol to introduce users/peers to each other via a signaling server.</p>
                 <div className="blog-footer">
                     {/* <a href="https://github.com/pocket-coders/castway-client" target="_blank" rel="noopener noreferrer">View Github</a> */}
                     <a href="https://www.youtube.com/watch?v=RRO1xZRwhhQ" target="_blank" rel="noopener noreferrer">View Project</a>
