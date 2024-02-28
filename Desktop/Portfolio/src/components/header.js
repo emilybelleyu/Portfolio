@@ -3,6 +3,8 @@ import React from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 //Import Images
 import daisy from "../images/daisy.png"
+// import ribbon from "../images/ribbon.png"
+// import gingham from "../images/gingham.jpeg"
 import floralTile from "../images/floralTile.png"
 // import scrollTo from 'gatsby-plugin-smoothscroll';
 

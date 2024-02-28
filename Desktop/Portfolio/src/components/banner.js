@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import floralTile from "../images/floralTile.png"
+// import gingham from "../images/gingham.jpeg"
 
 const Banner = () => {
   return (
