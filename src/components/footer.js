@@ -7,6 +7,7 @@ import github from "../images/github.png"
 import resume from "../images/resume.png"
 // import facebook from "../images/facebook.png"
 import floralTile from "../images/floralTile.png"
+// import gingham from "../images/gingham.jpeg"
 
 const Footer = () => {
   return (

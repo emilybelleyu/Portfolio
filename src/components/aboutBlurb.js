@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 // import { Link } from "gatsby"
 import floralTile from "../images/floralTile.png"
+// import gingham from "../images/gingham.jpeg"
 
 const AboutBlurb = () => {
   const data = useStaticQuery(graphql`
@@ -23,7 +24,7 @@ const AboutBlurb = () => {
           <div className="content">
             <h3>About Me</h3>
             <p>
-                I'm currently studying at the University of California, Los Angeles as a Computer Science major. I have an unhealthy addiction to tea, but a healthy obsession to cats.  
+                I'm currently studying at the University of California, Los Angeles as a Computer Science major. I have an unhealthy addiction to matcha, but a healthy obsession for cats.  
             </p>
             <div className="btn-row">
               <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
@@ -37,7 +38,8 @@ const AboutBlurb = () => {
           </div>
         </div>
         <div className="spotify-embed">
-          <iframe title="Video Player" src="https://open.spotify.com/embed/playlist/7LwmPOTG6EUc8eABfimv71?utm_source=generator" width="45%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" ></iframe>
+          <iframe title="Spotify Embed" src="https://open.spotify.com/embed/playlist/6m8EBuKc9pJpvkf40xnndL?utm_source=generator" width="45%" height="352" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          {/* <iframe title="Video Player" src="https://open.spotify.com/embed/playlist/7LwmPOTG6EUc8eABfimv71?utm_source=generator" width="45%" height="352" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" ></iframe> */}
         </div>
         <div className="spotify-content">
           <p>
