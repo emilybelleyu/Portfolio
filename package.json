@@ -1,0 +1,53 @@
+{
+  "name": "emilyyu",
+  "private": true,
+  "description": "Em's Portfolio",
+  "version": "0.1.0",
+  "author": "Emily Yu <emilyyu331@gmail.com>",
+  "dependencies": {
+    "gatsby": "2.32.13",
+    "gatsby-image": "^2.4.16",
+    "gatsby-plugin-manifest": "^2.4.23",
+    "gatsby-plugin-offline": "^3.2.23",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sharp": "^2.6.27",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-sharp": "^2.5.13",
+    "gsap": "^3.5.0",
+    "openssl": "^2.0.0",
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^3.11.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.60.0",
+    "smooth-scrollbar": "^8.5.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilybelleyu/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
