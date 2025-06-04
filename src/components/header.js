@@ -1,15 +1,20 @@
 import { Link } from "gatsby"
+// import scrollTo from 'gatsby-plugin-smoothscroll';
 import React from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 //Import Images
 import daisy from "../images/daisy.png"
-// import ribbon from "../images/ribbon.png"
-// import gingham from "../images/gingham.jpeg"
-import floralTile from "../images/floralTile.png"
-// import scrollTo from 'gatsby-plugin-smoothscroll';
+// import floralTile from "../images/floralTile.png"
+// import pinkFloral from "../images/pinkFloral.jpeg"
+// import floral from "../images/floral.jpeg"
+import pinkBrown from "../images/pinkBrown.jpeg"
 
 const Header = ({ toggleSidebar }) => (
-  <header style={{ background: `url(${floralTile}) repeat-x` }}> 
+  <header 
+        style={{ 
+        background: `url(${pinkBrown}) repeat-x`,
+      }}
+    >
     <div className="container">
       <div className="inner-header"> 
             <img className="daisy" src={daisy} width="45" height="40" alt="Daisy"/>

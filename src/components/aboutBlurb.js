@@ -2,8 +2,10 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 // import { Link } from "gatsby"
-import floralTile from "../images/floralTile.png"
-// import gingham from "../images/gingham.jpeg"
+// import floralTile from "../images/floralTile.png"
+// import floral from "../images/floral.jpeg"
+// import pinkBrown from "../images/pinkBrown.jpeg"
+import pinkFloral from "../images/pinkFloral.jpeg"
 
 const AboutBlurb = () => {
   const data = useStaticQuery(graphql`
@@ -18,7 +20,12 @@ const AboutBlurb = () => {
     }
   `)
   return (
-    <div id="about" className="about-blurb" style={{ background: `url(${floralTile}) repeat` }}>
+    <div id="about" className="about-blurb" 
+      style={{ 
+        background: `url(${pinkFloral}) repeat`,
+        backgroundSize: "530px 780px",
+      }}
+      >
       <div className="container">
         <div className="inner-blurb">
           <div className="content">

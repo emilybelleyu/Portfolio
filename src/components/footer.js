@@ -2,12 +2,13 @@ import React from "react"
 
 // Socials
 import linkedin from "../images/linkedin.png"
-import instagram from "../images/instagram.png"
+// import instagram from "../images/instagram.png"
 import github from "../images/github.png"
 import resume from "../images/resume.png"
-// import facebook from "../images/facebook.png"
-import floralTile from "../images/floralTile.png"
-// import gingham from "../images/gingham.jpeg"
+// import floralTile from "../images/floralTile.png"
+// import pinkFloral from "../images/pinkFloral.jpeg"
+// import floral from "../images/floral.jpeg"
+import pinkBrown from "../images/pinkBrown.jpeg"
 
 const Footer = () => {
   return (
@@ -23,16 +24,24 @@ const Footer = () => {
           </ul>
         </div>
       </div> */}
-      <div className="footer" style={{ background: `url(${floralTile}) repeat` }}>
-        <div className="inner" style={{ background: `url(${floralTile}) repeat` }}>
+      <div className="footer" 
+        style={{ 
+          background: `url(${pinkBrown}) repeat`,
+        }}
+        >
+        <div className="inner" 
+        style={{ 
+          background: `url(${pinkBrown}) repeat`,
+        }}
+        >
           <span>© {new Date().getFullYear()} Emily Yu</span>
           <div className="socials">
             <a href="https://www.linkedin.com/in/emily-yu-074a5a1b0" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} height="40" alt="Linkedin" />
             </a>
-            <a href="https://www.instagram.com/emibelleyu" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://www.instagram.com/emibelleyu" target="_blank" rel="noopener noreferrer">
               <img src={instagram} height="40" alt="Instagram" />
-            </a>
+            </a> */}
             <a href="https://github.com/emilybelleyu" target="_blank" rel="noopener noreferrer">
               <img src={github} height="40" alt="Github" />
             </a>

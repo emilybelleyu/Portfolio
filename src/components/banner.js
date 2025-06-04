@@ -1,11 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
-import floralTile from "../images/floralTile.png"
-// import gingham from "../images/gingham.jpeg"
+// import floralTile from "../images/floralTile.png"
+// import pinkFloral from "../images/pinkFloral.jpeg"
+// import floral from "../images/floral.jpeg"
+import pinkBrown from "../images/pinkBrown.jpeg"
 
 const Banner = () => {
   return (
-    <div className="banner" style={{ background: `url(${floralTile}) repeat` }}>
+    <div className="banner" 
+    style={{ 
+      background: `url(${pinkBrown}) repeat`,
+      }}
+      >
       <div className="container">
         <div className="row">
           <div className="main-text">Hi! I'm Emily.</div>
