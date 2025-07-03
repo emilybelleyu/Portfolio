@@ -45,13 +45,10 @@ const AboutBlurb = () => {
           </div>
         </div>
         <div className="spotify-embed">
-          <iframe title="Spotify Embed" src="https://open.spotify.com/embed/playlist/6m8EBuKc9pJpvkf40xnndL?utm_source=generator" width="45%" height="352" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          {/* <iframe title="Video Player" src="https://open.spotify.com/embed/playlist/7LwmPOTG6EUc8eABfimv71?utm_source=generator" width="45%" height="352" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" ></iframe> */}
+          <iframe title="Spotify Embed" src="https://open.spotify.com/embed/playlist/7LwmPOTG6EUc8eABfimv71?utm_source=generator" width="45%" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
         <div className="spotify-content">
-          <p>
-            These are my favourite songs at the moment!<span role="img" aria-label="strawberry">🍓</span><span role="img" aria-label="heartpulse">💗</span>
-          </p>
+          <p>These are my favourite songs at the moment! <span role="img" aria-label="poodle">🐩</span><span role="img" aria-label="dango">🍡</span></p>
         </div>
       </div>
     </div>
