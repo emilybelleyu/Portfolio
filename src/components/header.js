@@ -1,3 +1,4 @@
+import React from "react"
 import { Link } from "gatsby"
 import { GiHamburgerMenu } from "react-icons/gi"
 import daisy from "../images/daisy.png"

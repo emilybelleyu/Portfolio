@@ -1,3 +1,4 @@
+import React from "react"
 import '../styles/styles.scss'
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"

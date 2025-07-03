@@ -1,3 +1,4 @@
+import React from "react"
 import { Link } from "gatsby"
 import pinkBrown from "../images/pinkBrown.jpeg"
 
