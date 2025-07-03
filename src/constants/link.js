@@ -18,16 +18,11 @@ const data = [
     text: "projects",
     url: "/projects",
   },
-  // {
-  //   id: 4,
-  //   text: "contact",
-  //   url: "/contact/",
-  // },
-  // {
-  //   id: 5,
-  // text: "blog",
-  // url: "/blog/",
-  // },
+  {
+    id: 4,
+    text: "kitchen",
+    url: "/kitchen/",
+  },
 ]
 
 const tempLinks = data.map(link => {

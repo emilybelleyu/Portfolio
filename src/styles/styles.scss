@@ -390,13 +390,13 @@ header {
     }
   }
   .spotify-embed {
-    position: relative; /* Set the position to relative */
+    position: relative;
     margin-top: 15%;
     margin-left: 8%;
     // width: 100%;
     padding-bottom: 30%;
-    overflow: hidden; /* Hide the overflow of the container */
-    max-width: 100%; /* Ensure it fits within its container */
+    overflow: hidden; 
+    max-width: 100%; 
 
     iframe {
       position: absolute;
@@ -410,13 +410,13 @@ header {
     @media screen and (max-width: 1000px) {
       width: 100%;
       margin-top: 15%;
-      padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+      padding-bottom: 56.25%;
     }
     @media screen and (max-width: 620px) {
       width: 100%;
       margin-left: 25%;
       margin-top: 25%;
-      padding-bottom: 75%; /* Increase padding-bottom to ensure full visibility on mobile */
+      padding-bottom: 75%;
     }
   }
   .spotify-content {
@@ -583,46 +583,106 @@ header {
       }
     }
   }
-    // .blog-footer p:first-of-type {
-    //   display: inline-block;
-    //   background: $lightpink;
-    //   color: $black;
-    //   margin-right: 0.5rem;
-    //   padding: 0.25rem 0.5rem;
-    //   border-radius: $radius;
-    //   text-transform: uppercase;
-    //   letter-spacing: 2px;
-    //   font-size: 0.85rem;
-    // }
-    // @media screen and (min-width: 576px) {
-    //   .blogs-center {
-    //     display: grid;
-    //     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-    //     column-gap: 2rem;
-    //   }
-    // }
 
-    // height: 100vh;
-    // .row{
-    //   display: flex;
-    //   flex-wrap: wrap;
-    //   justify-content: space-between;
-    //   margin-top: 5.25vw;
-    // }
-    // .images {
-    //   width: 100%;
-    //   height: 100%;
-    //   img {
-    //    transition: all 0.5s cubic-bezier(0.43, 0.13, 0.23, 0.96) !important;
-    //   }
-    //   .imagewrap{
-    //     overflow: hidden;
-    //     min-width: 36.5vw;
-    //     margin: 0 auto;
-    //     :hover {
-    //       img {
-    //         transform: scale(1.1);
-    //       }
-    //     }
-    //   }
-    // }
+  //Kitchen
+  .kitchen {
+  padding: 8rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+  .filters {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    button {
+      margin: 0 8px;
+      padding: 0.4rem 1.2rem;
+      border-radius: 20px;
+      border: 1.5px solid #ccc;
+      background: transparent;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+      &.active,
+      &:hover {
+        background: $lightpink;
+        border-color: $peach;
+      }
+    }
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+
+    .dish-card {
+      position: relative;
+      cursor: pointer;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+
+    .gatsby-image-wrapper {
+      height: 400px;
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+      &:hover .gatsby-image-wrapper {
+        transform: scale(1.05);
+      }
+
+      .caption {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: rgba(149, 119, 126, 0.5);
+        color: white;
+        padding: 0.6rem 0;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.4rem;
+      border: none;
+      background: $red;
+      color: $lightpink;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 600;
+
+      &:hover {
+        background: $peach;
+      }
+    }
+  }
+}

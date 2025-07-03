@@ -31,6 +31,7 @@ const Header = ({ toggleSidebar }) => (
             {/* <button id="abt-btn" onClick={() => scrollTo('#about')}>About</button> */}
             <Link to="/#about">About</Link>
             <Link to="/projects">Projects</Link>
+            <Link to="/kitchen">My Kitchen</Link>
             {/* <Link to="/contact">Contact</Link> */}
           </nav>
         </div>
