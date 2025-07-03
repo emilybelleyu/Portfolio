@@ -1,5 +1,4 @@
 import React from "react"
-// import "../css/main.css"
 import Header from "./header"
 import Sidebar from "./sidebar"
 import Footer from "./footer"

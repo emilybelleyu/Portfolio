@@ -1,13 +1,6 @@
-import React from "react"
-
-// Socials
 import linkedin from "../images/linkedin.png"
-// import instagram from "../images/instagram.png"
 import github from "../images/github.png"
 import resume from "../images/resume.png"
-// import floralTile from "../images/floralTile.png"
-// import pinkFloral from "../images/pinkFloral.jpeg"
-// import floral from "../images/floral.jpeg"
 import pinkBrown from "../images/pinkBrown.jpeg"
 
 const Footer = () => {

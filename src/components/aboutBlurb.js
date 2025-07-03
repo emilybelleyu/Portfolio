@@ -1,7 +1,5 @@
-import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-// import { Link } from "gatsby"
 // import floralTile from "../images/floralTile.png"
 // import floral from "../images/floral.jpeg"
 // import pinkBrown from "../images/pinkBrown.jpeg"

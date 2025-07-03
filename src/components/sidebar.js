@@ -1,5 +1,3 @@
-
-import React from "react"
 import Links from "../constants/link"
 import { MdClose } from "react-icons/md"
 const Sidebar = ({ isOpen, toggleSidebar }) => {
