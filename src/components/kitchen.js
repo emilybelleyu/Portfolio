@@ -314,8 +314,8 @@ const Kitchen = () => {
     <section className="kitchen">
     <h3>
       a kitchen journal{" "}
-      <span role="img" aria-label="cloud">
-        ☁️
+      <span role="img" aria-label="flan">
+        🍮
       </span>
     </h3>
       <p><em>so i don't forget the recipes</em></p>
