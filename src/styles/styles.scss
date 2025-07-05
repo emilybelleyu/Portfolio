@@ -387,59 +387,52 @@ header {
       // }
     }
   }
+  .spotify-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 8rem;
+    gap: 8rem;
+    @media screen and (max-width: 1000px) {
+      padding-top: 6rem;
+      gap: 4rem;
+    }
+    @media screen and (max-width: 620px) {
+      padding-top: 4rem;
+      gap: 2rem;
+    }
+  }
+
   .spotify-embed {
+    flex: 1 1 250px;
+    max-width: 450px;
     position: relative;
-    margin-top: 15%;
-    margin-left: 8%;
-    // width: 100%;
-    padding-bottom: 30%;
-    overflow: hidden; 
-    max-width: 100%; 
+    padding-top: 35%;
+    overflow: hidden;
 
     iframe {
       position: absolute;
       top: 0;
       left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
-      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       box-shadow: $light-shadow;
       border-radius: 20px;
     }
-    @media screen and (max-width: 1000px) {
-      width: 100%;
-      margin-top: 15%;
-      padding-bottom: 56.25%;
-    }
-    @media screen and (max-width: 620px) {
-      width: 100%;
-      margin-left: 25%;
-      margin-top: 25%;
-      padding-bottom: 75%;
-    }
   }
+
   .spotify-content {
-    position: absolute;
-    margin-left: 58%;
-    margin-top: -20%;
-    width: 40%;
-    border-radius: 20px;
-    z-index: 1;
+    flex: 1 1 250px;
+    max-width: 400px;
     p {
-      font-size: 2.3vmin;
-      margin-top: 2%;
-      line-height: 2rem;
+      font-size: 1rem;
+      line-height: 1.8rem;
       font-weight: 300;
       color: $darkgrey;
-      @media screen and (max-width: 620px) {
-        margin-left: 10%;
-      }
-    }
-    @media screen and (max-width: 620px) {
-      position: relative;
-      margin-left: 8%;
-      margin-top: 2%;
-      width: 84%; 
-      padding: 20px;
+      text-align: center;
     }
   }
 }
@@ -477,12 +470,12 @@ header {
     }
   }
 }
-  @media (max-width: 600px) {
+@media (max-width: 600px) {
     .footer {
       .inner {
         .socials {
           a img {
-            width: 25px; // smaller size for mobile
+            width: 25px;
             height: 25px;
           }
         }
@@ -491,112 +484,105 @@ header {
   }
 
 //Projects
-  .projects {
-    background-color: $off-white;
-    position: relative;
-    font-family: $font;
-    width: 90%;
-    padding: 5rem 0;
-    margin: 50px auto;
-    max-width: 1170px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-flow: wrap;
-    align-items: center;
-    left: 8%;
+.projects {
+  background-color: $off-white;
+  position: relative;
+  font-family: $font;
+  width: 90%;
+  padding: 5rem 0;
+  margin: 50px auto;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  align-items: center;
+  left: 8%;
+  @media screen and (max-width: 620px) {
+      width: 100%;
+      padding: 20px;
+  }
+  .blog{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 30px;
+    background: $off-white;
+    border-radius: $radius;
+    box-shadow: $light-shadow;
+    transition: $transition;
+    width: 25%;
+    @media screen and (max-width: 1000px) {
+        width: 40%;
+      }
     @media screen and (max-width: 620px) {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .blog{
-      display: block;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      margin-right: 30px;
-      background: $off-white;
-      border-radius: $radius;
-      box-shadow: $light-shadow;
-      transition: $transition;
-      width: 25%;
-      @media screen and (max-width: 1000px) {
-          width: 40%;
-        }
-      @media screen and (max-width: 620px) {
-          width: 80%;
-        }
-    }
-    .blog:hover {
-      box-shadow: $dark-shadow;
-      transform: scale(1.02);
-    }
-    .blog article {
-      height: 100%;
-      display: grid;
-      grid-template-rows: auto 1fr;
-    }
-    .blog-img {
-      border-top-left-radius: $radius;
-      border-top-right-radius: $radius;
-      height: 11rem;
-      // @media screen and (min-width: 576px) {
-      //   height: 17.5rem;
-      // }
-      // @media screen and (min-width: 850px) {
-      //     height: 13.75rem;
-      // }
-    }
-    .blog-card {
-      height: 200px;
-      overflow: hidden;
-      padding: 1.5rem 1rem;
-      @media screen and (max-width: 1200px) {
-        overflow: scroll;
+        width: 80%;
       }
-    }
-    .blog-card h4 {
-      color: $black;
-      font-size: 2.5vmin;
-      letter-spacing: 1px;
-      font-weight: 550;
-      @media screen and (max-width: 620px) {
-        font-size: 4vmin;
-      }
-    }
-    .blog-card p {
-      margin-top: 10px;
-      font-size: 1.5vmin;
-      font-weight: 400;
-      color: $darkgrey;
-      max-height: 90px; /* Set a max height to trigger the scroll */
-      overflow: auto; /* Add the scroll effect */
-      @media screen and (max-width: 620px) {
-        font-size: 2.3vmin;
-      }
-    }
-    .blog-footer {
-      margin-top: 8px;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    .blog-footer a {
-      text-decoration: underline !important;
-      font-size: 2vmin;
-      margin-bottom: 0;
-      font-weight: 400;
-      color: $salmon;
-      margin-right: 10px;
-      @media screen and (max-width: 620px) {
-        font-size: 3vmin;
-      }
+  }
+  .blog:hover {
+    box-shadow: $dark-shadow;
+    transform: scale(1.02);
+  }
+  .blog article {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  .blog-img {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    height: 11rem;
+  }
+  .blog-card {
+    height: 200px;
+    overflow: hidden;
+    padding: 1.5rem 1rem;
+    @media screen and (max-width: 1200px) {
+      overflow: scroll;
     }
   }
+  .blog-card h4 {
+    color: $black;
+    font-size: 2.5vmin;
+    letter-spacing: 1px;
+    font-weight: 550;
+    @media screen and (max-width: 620px) {
+      font-size: 4vmin;
+    }
+  }
+  .blog-card p {
+    margin-top: 10px;
+    font-size: 1.5vmin;
+    font-weight: 400;
+    color: $darkgrey;
+    max-height: 90px; 
+    overflow: auto; 
+    @media screen and (max-width: 620px) {
+      font-size: 2.3vmin;
+    }
+  }
+  .blog-footer {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .blog-footer a {
+    text-decoration: underline !important;
+    font-size: 2vmin;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: $salmon;
+    margin-right: 10px;
+    @media screen and (max-width: 620px) {
+      font-size: 3vmin;
+    }
+  }
+}
 
-  //Kitchen
-  .kitchen {
-  padding: 8rem 2rem;
+//Kitchen
+.kitchen {
+  padding: 8rem 2rem 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -606,6 +592,7 @@ header {
     margin-bottom: 1.5rem;
     button {
       margin: 0 8px;
+      font-size: 0.8rem;
       padding: 0.4rem 1.2rem;
       border-radius: 20px;
       border: 1.5px solid #ccc;
@@ -619,9 +606,17 @@ header {
         border-color: $peach;
       }
     }
+
+    @media screen and (max-width: 620px) {
+      button {
+        font-size: 0.6 rem;
+        padding: 0.3rem 0.6rem;
+        margin: 0 4px;
+      }
+    }
   }
 
-  .gallery {
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
@@ -637,7 +632,7 @@ header {
       height: 400px;
       width: 100%;
       border-radius: 15px;
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       
       img {
         height: 100%;
@@ -647,6 +642,7 @@ header {
     }
       &:hover .gatsby-image-wrapper {
         transform: scale(1.05);
+        box-shadow: $dark-shadow;
       }
 
       .caption {
@@ -672,7 +668,7 @@ header {
   }
 
   .modal-content {
-    background: white;
+    background: $off-white;
     padding: 3rem;
     border-radius: 15px;
     max-width: 500px;
@@ -697,8 +693,37 @@ header {
     }
   }
 
-  .modal-content ul,
-  .modal-content p {
+.modal-content a {
+  color: $red;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.modal-content a:hover {
+  color: $pink;
+}
+
+.modal-content ul,
+.modal-content p {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .kitchen {
+    .gallery {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); // smaller cards
+      gap: 1.2rem;
+
+      .dish-card {
+        .gatsby-image-wrapper {
+          height: 200px;
+        }
+        .caption {
+          font-size: 0.8rem;
+          padding: 0.4rem 0;
+        }
+      }
+    }
   }
 }
