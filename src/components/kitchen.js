@@ -76,6 +76,9 @@ const Kitchen = () => {
       approved: file(relativePath: { eq: "approved.jpg" }) {
         childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
       }
+      greentea: file(relativePath: { eq: "greentea.jpg" }) {
+        childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
+      }
     }
   `)
 
@@ -183,6 +186,15 @@ const Kitchen = () => {
     },
     {
       id: 12,
+      name: "Iced Green Tea",
+      category: "drink",
+      image: data.greentea.childImageSharp.fluid,
+      ingredients: ["kirkland ito en green tea bags (or any other brand)", "1 tsp coconut sugar/honey (optional)", "hot water", "ice"],
+      note: "refreshing and full of antioxidants like egcg!",
+      steps: ["boil water and steep green tea bags for 3-5 mins", "add coconut sugar/honey if you'd like", "add ice and enjoy!"],
+    },
+    {
+      id: 13,
       name: "Japanese Potato Salad",
       category: "snack",
       image: data.potatosalad.childImageSharp.fluid,
@@ -191,19 +203,10 @@ const Kitchen = () => {
       steps: [],
     },
     {
-      id: 13,
+      id: 14,
       name: "Spicy Miso Ramen",
       category: "meal",
       image: data.spicymiso.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
-    },
-    {
-      id: 14,
-      name: "Pizza Toast",
-      category: "snack",
-      image: data.pizzatoast.childImageSharp.fluid,
       ingredients: [],
       note: "",
       steps: [],
@@ -288,7 +291,16 @@ const Kitchen = () => {
       ingredients: [],
       note: "Need to ask mom",
       steps: [],
-    }
+    },
+    {
+      id: 24,
+      name: "Pizza Toast",
+      category: "snack",
+      image: data.pizzatoast.childImageSharp.fluid,
+      ingredients: [],
+      note: "",
+      steps: [],
+    },
   ]
 
   const categories = ["all", "dessert", "drink", "meal", "snack"]
