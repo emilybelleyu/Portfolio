@@ -33,9 +33,6 @@ const Footer = () => {
             <a href="https://www.linkedin.com/in/emily-yu-074a5a1b0" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} height="40" alt="Linkedin" />
             </a>
-            {/* <a href="https://www.instagram.com/emibelleyu" target="_blank" rel="noopener noreferrer">
-              <img src={instagram} height="40" alt="Instagram" />
-            </a> */}
             <a href="https://github.com/emilybelleyu" target="_blank" rel="noopener noreferrer">
               <img src={github} height="40" alt="Github" />
             </a>
