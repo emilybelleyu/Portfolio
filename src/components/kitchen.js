@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../styles/styles.scss"
-
+import pinkpolka from "../images/pinkpolka.jpeg"
 
 const Kitchen = () => {
   const data = useStaticQuery(graphql`
@@ -198,9 +198,9 @@ const Kitchen = () => {
       name: "Japanese Potato Salad",
       category: "snack",
       image: data.potatosalad.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["2-3 medium russet potatoes", "half a carrot", "1 cucumber", "1/4 onion", "6 tbsp kewpie mayo", "1 tbsp rice vinegar", "1 tsp sugar/honey", "salt and pepper to taste", "optional: boiled egg, 2 slices ham, or 1/4 can of corn"],
+      note: "https://www.justonecookbook.com/japanese-potato-salad/",
+      steps: ["peel and chop potatoes into small cubes, boil in salted water until soft (10-15 mins)", "while potatoes are boiling, chop cucumber, onion, carrot, ham/egg", "once potatoes are done, drain, mash them in a bowl, let them cool", "add chopped meat & veggies to the bowl and boil/microwave carrots for a few minutes", "mix kewpie mayo, rice vinegar, sugar/honey, salt, and pepper in a separate bowl", "mix dressing with the bowl of cooled potatoes, veges, and meat", "chill in the fridge for 30 mins before serving"],
     },
     {
       id: 14,
@@ -208,44 +208,44 @@ const Kitchen = () => {
       category: "meal",
       image: data.spicymiso.childImageSharp.fluid,
       ingredients: [],
-      note: "",
-      steps: [],
+      note: "https://www.justonecookbook.com/homemade-chashu-miso-ramen/",
+      steps: ["follow recipe above, i used ground pork, mung bean noodles, and added a soft-boiled egg, scallions, and nori on top", "i used more doubanjiang to make it more spicy and instead of chicken stock i used dashi stock (dashi powder + water)", "add toppings of your choice like corn, kimchi, bamboo shoots, or bean sprouts"],
     },
     {
       id: 15,
       name: "Pesto Arugula Pasta and Salmon",
       category: "meal",
       image: data.pestopasta.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["2 tbsp trader joe's pesto", "1/3 cup onion", "1/2 cup arugula", "1/3 cup sliced cherry or diced roma tomatoes", "however much cooked pasta", "1 salmon fillet (1 sprig each of rosemary & thyme)", "salt and pepper to taste", "olive oil for cooking", "1 tbsp kerrygold butter (optional)", "2 tsp tomato paste (optional)"],
+      note: "kerrygold butter is the best for this recipe!",
+      steps: ["cook pasta according to package instructions", "while pasta is cooking, heat olive oil in a pan and cook salmon fillet with rosemary and thyme until cooked through (about 5-7 mins on each side)", "remove salmon from pan and set aside", "in the same pan, add butter, then sauté onions and tomatoes until translucent", "add pesto and can also add 2 tsp of tomato paste if you'd like here", "add arugula, cook for another 1-3 mins until arugula is wilted", "add cooked pasta to the pan, mix well", "season with salt and pepper to taste", "serve pasta topped with salmon"],
     },
     {
       id: 16,
       name: "Black Pepper Beef Udon",
       category: "meal",
       image: data.blackpep.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["black pepper sauce (follow tiffy cook's recipe)", "sliced beef", "frozen udon noodles", "1/3 cup canned corn", "green onions/cilantro for garnishing", "handful of sliced onions"],
+      note: "https://tiffycooks.com/taiwanese-black-pepper-steak-sauce-nightmarket-style/",
+      steps: ["follow recipe above to make black pepper sauce", "cook sliced onions in a pan with oil until translucent", "add sliced beef and cook until browned", "add black pepper sauce and simmer for a few mins", "cook frozen udon noodles according to package instructions (should be short that is why no need to cook it earlier)", "add cooked udon noodles to the pan, mix well", "top with corn, green onions, or cilantro if you'd like"],
     },
     {
       id: 17,
       name: "BLT and Sweet Potato Fries",
       category: "meal",
       image: data.blt.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["bacon", "romaine lettuce", "tomato", "bread (i used whole wheat but sourdough is yummy as well)", "fried egg, pickles, or pickled carrots (optional)", "sweet potatoes", "olive oil", "salt and pepper to taste", "optional: mayo, dijon mustard, or pesto for the sandwich sauce"],
+      note: "very versatile recipe, you can add whatever toppings you like to the sandwich",
+      steps: ["cook bacon in an airfryer or pan until crispy, set aside", "toast bread in the same pan with bacon grease or in a toaster", "slice tomato and wash romaine lettuce", "assemble sandwich with bacon, lettuce, tomato, and any other toppings you like (fried egg, pickles, or pickled carrots)", "for sweet potato fries, start boiling water in a pot", "cut sweet potatoes into thin strips, toss with olive oil, garlic salt, paprika, and pepper", "parboil for several minutes until slightly fork tender", "spread on a fryer sheet and airfry on 375-400F for 20-25 mins until crispy", "enjoy your BLT with sweet potato fries on the side"],
     },
     {
       id: 18,
-      name: "Pink Smoothie",
+      name: "Berry Pink Smoothie",
       category: "drink",
       image: data.smoothie.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["1/2 cup frozen strawberries", "1/2 cup frozen raspberries", "1 cup or more almond milk (or any milk of your choice)", "1 tsp vanilla extract", "1 tsp almond extract", "3 tsp honey (optional)", "1 tbsp collagen powder (optional)", "a bit of water if too thick"],
+      note: "did you get the pun",
+      steps: ["add frozen strawberries, raspberries, almond milk, vanilla extract, almond extract, honey, and collagen powder to a blender", "blend until smooth, adding a bit of water if too thick", "pour into a glass and enjoy!"],
     },
     {
       id: 19,
@@ -253,35 +253,35 @@ const Kitchen = () => {
       category: "dessert",
       image: data.flan.childImageSharp.fluid,
       ingredients: [],
-      note: "",
-      steps: [],
+      note: "https://www.justonecookbook.com/custard-pudding/",
+      steps: ["follow recipe above exactly! i did use half the amount of sugar for caramel sauce"],
     },
     {
       id: 20,
       name: "Chive & Eggs with Sweet Potato",
       category: "meal",
       image: data.eggchives.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["1 bunch of chinese chives", "2-3 eggs", "1 tbsp mirin", "1/2 tsp chicken bouillon/salt", "1-3 tsp white pepper (i prefer higher end)", "1 tbsp oil", "1 sweet potato (optional)"],
+      note: "https://thewoksoflife.com/chinese-chives-eggs/",
+      steps: ["wash and chop chives into 1-2 inch pieces", "beat eggs in a bowl, season with chicken bouillon/salt and white pepper", "heat oil in a pan over medium heat", "add chives and stir-fry with dash of mirin for 4-6 mins until slightly wilted", "pour beaten eggs into the pan, cook until eggs are set but still soft (about 2-3 mins)", "for sweet potato, peel (optional) and chop into chunks, boil in salted water until tender (10-15 mins), then pan-fry or airfry with a bit of oil until crispy on the outside", "serve chive and eggs with sweet potato on the side"],
     },
     {
       id: 21,
-      name: "Perfect Steak",
+      name: "Rosemary & Thyme Steak",
       category: "meal",
       image: data.perfsteak.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["1 steak (ribeye or sirloin)", "1-3 tbsp kerrygold butter", "1 tsp salt", "1 tsp pepper", "1 sprig of rosemary", "1 sprig of thyme", "2 cloves garlic (optional)"],
+      note: "the perfect steak recipe!",
+      steps: ["let steak sit at room temperature for 10-15 mins before cooking", "season both sides of the steak with salt and pepper", "heat a cast iron skillet or pan over high heat until very hot", "add kerrygold butter, rosemary, thyme, and garlic to the pan", "once butter is melted and sizzling, add the steak to the pan", "cook for 3-4 mins on each side for medium-rare (adjust time based on thickness and doneness that you prefer)", "baste the steak with the melted butter and herbs while cooking", "remove from heat and let rest for 5 mins before slicing"],
     },
     {
       id: 22,
       name: "Ham Sandwich and Dill Pickles",
       category: "meal",
       image: data.hamsandwich.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["2 slices of bread", "1-2 slices of ham", "1 slice of cheese (optional)", "1-2 leaves of lettuce", "1-2 slices of tomato", "dill pickles (or any pickles you like)", "2 tsp mayonnaise, 1 tsp dijon mustard, 2 tsp pesto for the sauce (not optional)"],
+      note: "anything can be in this sandwich! the sauce is what matters",
+      steps: ["spread mayonnaise, dijon mustard, and pesto on one side of each slice of bread", "layer ham, cheese, lettuce, and tomato on one slice of bread", "top with the other slice of bread", "cut sandwich in half and serve with dill pickles on the side", "enjoy your ham sandwich with a refreshing crunch from the pickles"],
     },
     {
       id: 23,
@@ -297,9 +297,9 @@ const Kitchen = () => {
       name: "Pizza Toast",
       category: "snack",
       image: data.pizzatoast.childImageSharp.fluid,
-      ingredients: [],
-      note: "",
-      steps: [],
+      ingredients: ["fluffy bread from asian bakery (i went to J.J. Bakery)", "marinara or tomato sauce", "mozzarella cheese", "pepperoni or any toppings you like", "olive oil", "oregano, garlic powder, and red pepper flakes for seasoning"],
+      note: "simple but tasty! i believe this is a popular snack in japan",
+      steps: ["use toaster to toast the bread a bit before we add toppings (toast on lowest setting)", "spread marinara sauce on top of the bread", "add mozzarella cheese and any toppings you like (pepperoni, veggies, etc.)", "drizzle with olive oil and sprinkle oregano, garlic salt, and red pepper flakes on top", "airfry until cheese is melted and bubbly (about 5-7 mins at 375F)", "slice and enjoy your pizza toast!"],
     },
   ]
 
@@ -323,6 +323,14 @@ const Kitchen = () => {
   }, [selectedDish])
       
   return (
+
+    <section
+      className="kitchen-bg"
+      style={{
+        background: `url(${pinkpolka}) repeat`,
+        backgroundSize: "260px 490px",
+      }}
+    >
     <section className="kitchen">
     <h3>
       a kitchen journal{" "}
@@ -429,6 +437,7 @@ const Kitchen = () => {
           </div>
         </div>
       )}
+    </section>
     </section>
   )
 }
