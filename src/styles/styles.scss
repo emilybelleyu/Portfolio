@@ -572,7 +572,7 @@ header {
   width: 100%;
 }
 .kitchen {
-  padding: 8rem 2rem 5rem 2rem;
+  padding: 8rem 2rem 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
@@ -728,7 +728,7 @@ header {
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   flex-wrap: wrap;
 
   button {
@@ -747,5 +747,10 @@ header {
     &:hover {
       background-color: #f0c4d3;
     }
+  }
+
+  .dots {
+    padding: 0.5rem;
+    color: #999;
   }
 }

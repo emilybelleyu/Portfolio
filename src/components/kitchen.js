@@ -335,6 +335,33 @@ const Kitchen = () => {
   useEffect(() => {
     setCurrentPage(1)
   }, [selectedCategory])
+
+  const getPaginationRange = (totalPages, currentPage) => {
+    const range = []
+    const delta = 1
+    const left = Math.max(2, currentPage - delta)
+    const right = Math.min(totalPages - 1, currentPage + delta)
+
+    range.push(1)
+
+    if (left > 2) {
+      range.push("...")
+    }
+
+    for (let i = left; i <= right; i++) {
+      range.push(i)
+    }
+
+    if (right < totalPages - 1) {
+      range.push("...")
+    }
+
+    if (totalPages > 1) {
+      range.push(totalPages)
+    }
+
+    return range
+  }
       
   return (
     <section
@@ -385,15 +412,21 @@ const Kitchen = () => {
       </div>
 
       <div className="pagination">
-        {Array.from({ length: totalPages }).map((_, index) => (
-          <button
-            key={index}
-            className={currentPage === index + 1 ? "active" : ""}
-            onClick={() => setCurrentPage(index + 1)}
-          >
-            {index + 1}
-          </button>
-        ))}
+        {getPaginationRange(totalPages, currentPage).map((page, i) => {
+          if (page === "...") {
+            return <span key={i} className="dots">...</span>
+          }
+
+          return (
+            <button
+              key={i}
+              className={page === currentPage ? "active" : ""}
+              onClick={() => setCurrentPage(page)}
+            >
+              {page}
+            </button>
+          )
+        })}
       </div>
 
       {selectedDish && (
