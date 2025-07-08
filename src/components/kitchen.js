@@ -309,7 +309,7 @@ const Kitchen = () => {
   const [selectedDish, setSelectedDish] = useState(null)
 
   const [currentPage, setCurrentPage] = useState(1)
-  const itemsPerPage = 8
+  const itemsPerPage = 12
 
   // Filter dishes based on selected category
   const filteredDishes = selectedCategory === "all"
