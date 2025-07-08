@@ -2,7 +2,6 @@ $font: "sans-serif", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxyg
 
 //Colors
 $off-white: #f7eceb;
-//#f6e3e0;
 $black: #000000;
 $darkgrey: #373636;
 $grey: #646363;
@@ -20,7 +19,6 @@ $dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
 
 // Global Styles and Classes
-
 *,
 ::after,
 ::before {
@@ -369,22 +367,11 @@ header {
         width: 50vmin;
         top: 0;
         right: 0;
-        // box-shadow: 0px 0px 21px -10px #000000;
         border-radius: 20px;
       }
       .top-right img{
         border-radius: 20px;
-        // transition: all 0.5s cubic-bezier(0.43, 0.13, 0.23, 0.96) !important;
       }
-      // .top-right img:hover{
-      //   transform: scale(1.1);
-      // }
-      // .bottom-left {
-      //   position: absolute;
-      //   width: 20vw;
-      //   left: 0;
-      //   bottom: 0;
-      // }
     }
   }
   .spotify-section {
@@ -612,7 +599,7 @@ header {
       &.active,
       &:hover {
         background: $lightpink;
-        border-color: $peach;
+        border-color: $off-white;
       }
     }
 
@@ -721,7 +708,7 @@ header {
 @media (max-width: 620px) {
   .kitchen {
     .gallery {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); // smaller cards
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 1.2rem;
 
       .dish-card {
@@ -733,6 +720,32 @@ header {
           padding: 0.4rem 0;
         }
       }
+    }
+  }
+}
+
+// Kitchen Pagination
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+
+  button {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+
+    &.active {
+      background-color: #e5a0b6;
+      color: white;
+    }
+
+    &:hover {
+      background-color: #f0c4d3;
     }
   }
 }

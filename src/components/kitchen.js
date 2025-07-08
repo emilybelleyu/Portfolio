@@ -304,16 +304,26 @@ const Kitchen = () => {
   ]
 
   const categories = ["all", "dessert", "drink", "meal", "snack"]
+
   const [selectedCategory, setSelectedCategory] = useState("all")
   const [selectedDish, setSelectedDish] = useState(null)
 
+  const [currentPage, setCurrentPage] = useState(1)
+  const itemsPerPage = 8
+
   // Filter dishes based on selected category
-  const filteredDishes =
-    selectedCategory === "all"
+  const filteredDishes = selectedCategory === "all"
       ? dishes
       : dishes.filter((dish) => dish.category === selectedCategory)
 
-  // Focus modal when a dish is selected
+  const totalPages = Math.ceil(filteredDishes.length / itemsPerPage)
+
+  const paginatedDishes = filteredDishes.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  ) 
+
+  // Focus modal when dish is selected
   const modalRef = useRef(null)
 
   useEffect(() => {
@@ -321,9 +331,12 @@ const Kitchen = () => {
       modalRef.current.focus()
     }
   }, [selectedDish])
+
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [selectedCategory])
       
   return (
-
     <section
       className="kitchen-bg"
       style={{
@@ -353,7 +366,7 @@ const Kitchen = () => {
       </div>
 
       <div className="gallery">
-        {filteredDishes.map((dish) => (
+        {paginatedDishes.map((dish) => (
           <div
           className="dish-card"
           role="button"
@@ -368,6 +381,18 @@ const Kitchen = () => {
             <Img fluid={dish.image} alt={dish.name} />
             <div className="caption">{dish.name}</div>
           </div>
+        ))}
+      </div>
+
+      <div className="pagination">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <button
+            key={index}
+            className={currentPage === index + 1 ? "active" : ""}
+            onClick={() => setCurrentPage(index + 1)}
+          >
+            {index + 1}
+          </button>
         ))}
       </div>
 
