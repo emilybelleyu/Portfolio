@@ -79,6 +79,12 @@ const Kitchen = () => {
       greentea: file(relativePath: { eq: "greentea.jpg" }) {
         childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
       }
+      greenjuice: file(relativePath: { eq: "greenjuice.jpg" }) {
+        childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
+      }
+      melodyyogurt: file(relativePath: { eq: "melodyyogurt.jpg" }) {
+        childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
+      }
     }
   `)
 
@@ -87,6 +93,24 @@ const Kitchen = () => {
   const dishes = [
     {
       id: 1,
+      name: "Green Juice",
+      category: "drink",
+      image: data.greenjuice.childImageSharp.fluid,
+      ingredients: ["4 green apples", "2 lemons", "a bunch of celery", "1 cup spinach or kale", "water"],
+      note: "https://www.amazon.com/dp/B0F9W8Q75N",
+      steps: ["wash and chop apples, lemons, celery, and spinach/kale", "add all ingredients slowly to a juicer", "add the juice to a pitcher and fill rest with water and ice", "enjoy your refreshing green juice!"],
+    },
+    {
+      id: 2,
+      name: "Melody Yogurt",
+      category: "dessert",
+      image: data.melodyyogurt.childImageSharp.fluid,
+      ingredients: ["strained greek yogurt", "strawberry puree (1 tsp vanilla extract, honey, handful of strawberries)", "a piece of chocolate", "pistachio butter", "toothpick", "granola, berries, cookies (optional)"],
+      note: "https://www.amazon.com/dp/B0DC54CDCH",
+      steps: ["make strawberry puree (blend strawberries with honey and vanilla extract) and store in a container", "mix strained greek yogurt with as much strawberry puree to create perfect soft pink shade", "design my melody to the best of your abilities with the chocolate and pistachio butter (i used a toothpick!)", "top with granola, berries, or cookies if you'd like"],
+    },
+    {
+      id: 3,
       name: "Strawberry Tanghulu",
       category: "dessert",
       image: data.tanghulu.childImageSharp.fluid,
@@ -95,7 +119,7 @@ const Kitchen = () => {
       steps: ["wash strawberries, take off tops, and dry well", "make syrup (2:1 sugar to water ratio)", "microwave syrup for ~5 mins (30 second intervals) until light amber color", "quickly dip strawberries in syrup", "let cool on parchment paper or freezer for 10 mins"],
     },
     {
-      id: 2,
+      id: 4,
       name: "Berry Chantilly Matcha Latte",
       category: "drink",
       image: data.berrychantilly.childImageSharp.fluid,
@@ -104,7 +128,7 @@ const Kitchen = () => {
       steps: ["make berry chantilly puree (blend berries with honey, almond ex, vanilla ex) and store in a container", "whisk 3 tsp matcha with hot water", "layer berry puree, ice, milk, and matcha in a cute glass", "top with pink berry cream top if you'd like (whisk berry puree + whole milk)"],
     },
     {
-      id: 3,
+      id: 5,
       name: "Beef Gyudon and Bok Choy",
       category: "meal",
       image: data.simpledinner.childImageSharp.fluid,
@@ -113,7 +137,7 @@ const Kitchen = () => {
       steps: ["cook sliced onions in dash of oil for a few mins", "add beef + sugar and cook until browned", "add sauce ingredients and simmer", "stir-fry bok choy with ginger, garlic, oil for 5-10 mins until tender", "season bok choy with chicken bouillon/salt and white pepper", "serve beef over rice with bok choy on the side", "top with scallions or green onions if you'd like"],
     },
     {
-      id: 4,
+      id: 6,
       name: "Strawberry Matcha Latte",
       category: "drink",
       image: data.strawberrymatcha.childImageSharp.fluid,
@@ -122,7 +146,7 @@ const Kitchen = () => {
       steps: ["make strawberry puree (blend strawberries with honey and vanilla extract) and store in a container", "whisk 3 tsp matcha with hot water", "layer strawberry puree, ice, milk, and matcha in a cute glass", "top with pink berry cream top if you'd like (whisk strawberry puree + whole milk)"],
     },
     {
-      id: 5,
+      id: 7,
       name: "Strawberry Balsamic Salad",
       category: "meal",
       image: data.strawbsalad.childImageSharp.fluid,
@@ -131,7 +155,7 @@ const Kitchen = () => {
       steps: ["wash and slice strawberries", "mix balsamic vinegar, olive oil, salt, and pepper in a bowl", "toss romaine lettuce with dressing", "top with sliced strawberries and red onions", "add feta cheese or nuts if you'd like"],
     },
     {
-      id: 6,
+      id: 8,
       name: "Another Matcha Latte",
       category: "drink",
       image: data.anothermatcha.childImageSharp.fluid,
@@ -140,7 +164,7 @@ const Kitchen = () => {
       steps: [],
     },
     {
-      id: 7,
+      id: 9,
       name: "Matcha Strawberry Cookies",
       category: "dessert",
       image: data.matchacookies.childImageSharp.fluid,
@@ -149,7 +173,7 @@ const Kitchen = () => {
       steps: ["follow recipe, made chocolate ganache instead of strawberry icing, did not marble the cookies cause lazy, made cookies less thin to look more chubby and cute, and topped with freeze dried strawberries"],
     },
     {
-      id: 8,
+      id: 10,
       name: "Mochi the Cat",
       category: "snack",
       image: data.approved.childImageSharp.fluid,
@@ -158,7 +182,7 @@ const Kitchen = () => {
       steps: [],
     },
     {
-      id: 9,
+      id: 11,
       name: "Matcha Crepe",
       category: "dessert",
       image: data.matchacrepe.childImageSharp.fluid,
@@ -167,7 +191,7 @@ const Kitchen = () => {
       steps: ["follow recipe above, fold into a triangle and top with whipped cream, fruits, and/or matcha powder (i used white peaches and target's strawberry whipped cream to make cute cream flowers), and added a drizzle of honey (optional)"],
     },
     {
-      id: 10,
+      id: 12,
       name: "Soupy Tteokbokki",
       category: "meal",
       image: data.waterytteok.childImageSharp.fluid,
@@ -176,7 +200,7 @@ const Kitchen = () => {
       steps: ["used bibigo tteokbokki package but added extra sauce/spices (if you do not want to use prepackaged bibigo sauce at all just add more gochujang)", "boil water and add tteokbokki sauce ingredients", "add tteokbokki and cook for 5-10 mins until soft", "add fish cakes and cabbage, cook for another few mins", "top with scallions/green onions and jammy egg", "enjoy with side radish cake (pan-fried but came frozen from asian grocery mart!)"],
     },
     {
-      id: 11,
+      id: 13,
       name: "Thick Tteokbokki",
       category: "meal",
       image: data.thicktteok.childImageSharp.fluid,
@@ -185,7 +209,7 @@ const Kitchen = () => {
       steps: ["used bibigo tteokbokki package but added extra sauce/spice (if you do not want to use prepackaged bibigo sauce at all just add more gochujang)", "boil water and add tteokbokki sauce ingredients", "add tteokbokki and cook for 5-10 mins until soft", "add fish cakes and cabbage, cook for another few mins", "top with scallions/green onions and jammy egg", "enjoy with bean sprout side dish"],
     },
     {
-      id: 12,
+      id: 14,
       name: "Iced Green Tea",
       category: "drink",
       image: data.greentea.childImageSharp.fluid,
@@ -194,7 +218,7 @@ const Kitchen = () => {
       steps: ["boil water and steep green tea bags for 3-5 mins", "add coconut sugar/honey if you'd like", "add ice and enjoy!"],
     },
     {
-      id: 13,
+      id: 15,
       name: "Japanese Potato Salad",
       category: "snack",
       image: data.potatosalad.childImageSharp.fluid,
@@ -203,7 +227,7 @@ const Kitchen = () => {
       steps: ["peel and chop potatoes into small cubes, boil in salted water until soft (10-15 mins)", "while potatoes are boiling, chop cucumber, onion, carrot, ham/egg", "once potatoes are done, drain, mash them in a bowl, let them cool", "add chopped meat & veggies to the bowl and boil/microwave carrots for a few minutes", "mix kewpie mayo, rice vinegar, sugar/honey, salt, and pepper in a separate bowl", "mix dressing with the bowl of cooled potatoes, veges, and meat", "chill in the fridge for 30 mins before serving"],
     },
     {
-      id: 14,
+      id: 16,
       name: "Spicy Miso Ramen",
       category: "meal",
       image: data.spicymiso.childImageSharp.fluid,
@@ -212,7 +236,7 @@ const Kitchen = () => {
       steps: ["follow recipe above, i used ground pork, mung bean noodles, and added a soft-boiled egg, scallions, and nori on top", "i used more doubanjiang to make it more spicy and instead of chicken stock i used dashi stock (dashi powder + water)", "add toppings of your choice like corn, kimchi, bamboo shoots, or bean sprouts"],
     },
     {
-      id: 15,
+      id: 17,
       name: "Pesto Arugula Pasta and Salmon",
       category: "meal",
       image: data.pestopasta.childImageSharp.fluid,
@@ -221,7 +245,7 @@ const Kitchen = () => {
       steps: ["cook pasta according to package instructions", "while pasta is cooking, heat olive oil in a pan and cook salmon fillet with rosemary and thyme until cooked through (about 5-7 mins on each side)", "remove salmon from pan and set aside", "in the same pan, add butter, then sauté onions and tomatoes until translucent", "add pesto and can also add 2 tsp of tomato paste if you'd like here", "add arugula, cook for another 1-3 mins until arugula is wilted", "add cooked pasta to the pan, mix well", "season with salt and pepper to taste", "serve pasta topped with salmon"],
     },
     {
-      id: 16,
+      id: 18,
       name: "Black Pepper Beef Udon",
       category: "meal",
       image: data.blackpep.childImageSharp.fluid,
@@ -230,7 +254,7 @@ const Kitchen = () => {
       steps: ["follow recipe above to make black pepper sauce", "cook sliced onions in a pan with oil until translucent", "add sliced beef and cook until browned", "add black pepper sauce and simmer for a few mins", "cook frozen udon noodles according to package instructions (should be short that is why no need to cook it earlier)", "add cooked udon noodles to the pan, mix well", "top with corn, green onions, or cilantro if you'd like"],
     },
     {
-      id: 17,
+      id: 19,
       name: "BLT and Sweet Potato Fries",
       category: "meal",
       image: data.blt.childImageSharp.fluid,
@@ -239,7 +263,7 @@ const Kitchen = () => {
       steps: ["cook bacon in an airfryer or pan until crispy, set aside", "toast bread in the same pan with bacon grease or in a toaster", "slice tomato and wash romaine lettuce", "assemble sandwich with bacon, lettuce, tomato, and any other toppings you like (fried egg, pickles, or pickled carrots)", "for sweet potato fries, start boiling water in a pot", "cut sweet potatoes into thin strips, toss with olive oil, garlic salt, paprika, and pepper", "parboil for several minutes until slightly fork tender", "spread on a fryer sheet and airfry on 375-400F for 20-25 mins until crispy", "enjoy your BLT with sweet potato fries on the side"],
     },
     {
-      id: 18,
+      id: 20,
       name: "Berry Pink Smoothie",
       category: "drink",
       image: data.smoothie.childImageSharp.fluid,
@@ -248,7 +272,7 @@ const Kitchen = () => {
       steps: ["add frozen strawberries, raspberries, almond milk, vanilla extract, almond extract, honey, and collagen powder to a blender", "blend until smooth, adding a bit of water if too thick", "pour into a glass and enjoy!"],
     },
     {
-      id: 19,
+      id: 21,
       name: "Japanese Flan",
       category: "dessert",
       image: data.flan.childImageSharp.fluid,
@@ -257,7 +281,7 @@ const Kitchen = () => {
       steps: ["follow recipe above exactly! i did use half the amount of sugar for caramel sauce"],
     },
     {
-      id: 20,
+      id: 22,
       name: "Chive & Eggs with Sweet Potato",
       category: "meal",
       image: data.eggchives.childImageSharp.fluid,
@@ -266,7 +290,7 @@ const Kitchen = () => {
       steps: ["wash and chop chives into 1-2 inch pieces", "beat eggs in a bowl, season with chicken bouillon/salt and white pepper", "heat oil in a pan over medium heat", "add chives and stir-fry with dash of mirin for 4-6 mins until slightly wilted", "pour beaten eggs into the pan, cook until eggs are set but still soft (about 2-3 mins)", "for sweet potato, peel (optional) and chop into chunks, boil in salted water until tender (10-15 mins), then pan-fry or airfry with a bit of oil until crispy on the outside", "serve chive and eggs with sweet potato on the side"],
     },
     {
-      id: 21,
+      id: 23,
       name: "Rosemary & Thyme Steak",
       category: "meal",
       image: data.perfsteak.childImageSharp.fluid,
@@ -275,7 +299,7 @@ const Kitchen = () => {
       steps: ["let steak sit at room temperature for 10-15 mins before cooking", "season both sides of the steak with salt and pepper", "heat a cast iron skillet or pan over high heat until very hot", "add kerrygold butter, rosemary, thyme, and garlic to the pan", "once butter is melted and sizzling, add the steak to the pan", "cook for 3-4 mins on each side for medium-rare (adjust time based on thickness and doneness that you prefer)", "baste the steak with the melted butter and herbs while cooking", "remove from heat and let rest for 5 mins before slicing"],
     },
     {
-      id: 22,
+      id: 24,
       name: "Ham Sandwich and Dill Pickles",
       category: "meal",
       image: data.hamsandwich.childImageSharp.fluid,
@@ -284,7 +308,7 @@ const Kitchen = () => {
       steps: ["spread mayonnaise, dijon mustard, and pesto on one side of each slice of bread", "layer ham, cheese, lettuce, and tomato on one slice of bread", "top with the other slice of bread", "cut sandwich in half and serve with dill pickles on the side", "enjoy your ham sandwich with a refreshing crunch from the pickles"],
     },
     {
-      id: 23,
+      id: 25,
       name: "Crispy Chicken",
       category: "meal",
       image: data.crispychicken.childImageSharp.fluid,
@@ -293,7 +317,7 @@ const Kitchen = () => {
       steps: [],
     },
     {
-      id: 24,
+      id: 26,
       name: "Pizza Toast",
       category: "snack",
       image: data.pizzatoast.childImageSharp.fluid,
