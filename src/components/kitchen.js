@@ -85,6 +85,12 @@ const Kitchen = () => {
       melodyyogurt: file(relativePath: { eq: "melodyyogurt.jpg" }) {
         childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
       }
+      icejelly: file(relativePath: { eq: "icejelly.jpg" }) {
+        childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
+      } 
+      strawberrymatchayogurt: file(relativePath: { eq: "strawberrymatchayogurt.jpeg" }) {
+        childImageSharp { fluid(maxWidth: 500, quality: 90) { ...GatsbyImageSharpFluid } }
+      } 
     }
   `)
 
@@ -324,6 +330,24 @@ const Kitchen = () => {
       ingredients: ["fluffy bread from asian bakery (i went to J.J. Bakery)", "marinara or tomato sauce", "mozzarella cheese", "pepperoni or any toppings you like", "olive oil", "oregano, garlic powder, and red pepper flakes for seasoning"],
       note: "simple but tasty! i believe this is a popular snack in japan",
       steps: ["use toaster to toast the bread a bit before we add toppings (toast on lowest setting)", "spread marinara sauce on top of the bread", "add mozzarella cheese and any toppings you like (pepperoni, veggies, etc.)", "drizzle with olive oil and sprinkle oregano, garlic salt, and red pepper flakes on top", "airfry until cheese is melted and bubbly (about 5-7 mins at 375F)", "slice and enjoy your pizza toast!"],
+    },
+    {
+      id: 27,
+      name: "Meet Fresh Icy Grass Jelly Copycat",
+      category: "dessert",
+      image: data.icejelly.childImageSharp.fluid,
+      ingredients: ["herbal grass jelly (store-bought from 99 Ranch)", "whole milk", "crushed ice", "toppings (rice balls, etc.)"],
+      note: "i love meet fresh's icy grass jelly dessert, this is my attempt at recreating it",
+      steps: ["take herbal grass jelly out of the package and cut into small cubes", "add grass jelly cubes into a bowl", "add a generous amount of crushed ice to a bowl", "pour a splash of whole milk over the ice", "add any toppings you like (i used store-bought rice balls)", "enjoy the meet fresh copycat!"],
+    },
+    {
+      id: 28,
+      name: "Matcha & Strawberry Yogurt",
+      category: "dessert",
+      image: data.strawberrymatchayogurt.childImageSharp.fluid,
+      ingredients: ["strained greek yogurt", "matcha powder", "strawberry puree (1 tsp vanilla extract, honey, handful of strawberries)", "granola, berries, rose petals (optional toppings)"],
+      note: "inspired by neopalitan ice cream, this is a cute and tasty dessert",
+      steps: ["make strawberry puree (blend strawberries with honey and vanilla extract) and store in a container", "mix half of the strained greek yogurt with matcha powder + splash of hot water to create a soft green shade and mix strawb puree with other half of yogurt for pink shade", "layer matcha yogurt, strawberry yogurt, and any toppings you like (granola, berries, rose petals) in a cute glass or bowl"],
     },
   ]
 
